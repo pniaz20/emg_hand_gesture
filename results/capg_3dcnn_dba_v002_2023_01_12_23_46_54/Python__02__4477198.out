@@ -1,0 +1,945 @@
+=======================
+Loading Modules Anaconda/2022.05, cuda/11.3 ...
+Checking to see which modules are loaded already
+Currently Loaded Modulefiles:
+  1) anaconda/2022.05   2) cuda/11.3
+Activating conda environment myEnv001 ... 
+Checking to see which conda environment we are on at the moment...
+# conda environments:
+#
+base                     /kuacc/apps/anaconda/2022.05
+alphafold                /kuacc/apps/anaconda/2022.05/envs/alphafold
+colmap                   /kuacc/apps/anaconda/2022.05/envs/colmap
+Pouya                    /kuacc/users/pniaz20/.conda/envs/Pouya
+carla                    /kuacc/users/pniaz20/.conda/envs/carla
+myEnv001              *  /kuacc/users/pniaz20/.conda/envs/myEnv001
+myenv1                   /kuacc/users/pniaz20/.conda/envs/myenv1
+
+=======================
+
+============================== ENVIRONMENT VARIABLES ===============================
+SLURM_CHECKPOINT_IMAGE_DIR=/var/slurm/checkpoint
+SLURM_NODELIST=ai06
+LC_PAPER=en_US.UTF-8
+SLURM_JOB_NAME=PYTHON_2
+LC_ADDRESS=en_US.UTF-8
+XDG_SESSION_ID=c128788
+SLURMD_NODENAME=ai06
+SLURM_TOPOLOGY_ADDR=ai06
+HOSTNAME=ai06
+SLURM_NTASKS_PER_NODE=4
+LC_MONETARY=en_US.UTF-8
+TERM_PROGRAM=vscode
+SLURM_PRIO_PROCESS=0
+SLURM_NODE_ALIASES=(null)
+SHELL=/bin/bash
+TERM=xterm-256color
+SLURM_JOB_QOS=ai
+TMPDIR=/tmp
+SLURM_TOPOLOGY_ADDR_PATTERN=node
+SSH_CLIENT=172.24.6.12 32782 22
+CONDA_SHLVL=1
+LIBRARY_PATH=/kuacc/apps/cuda/11.3/lib64
+CONDA_PROMPT_MODIFIER=(myEnv001) 
+TERM_PROGRAM_VERSION=1.74.2
+GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+LC_NUMERIC=en_US.UTF-8
+QTDIR=/usr/lib64/qt-3.3
+SLURM_JOB_GPUS=4
+QTINC=/usr/lib64/qt-3.3/include
+QT_GRAPHICSSYSTEM_CHECKED=1
+CUDA_HOME=/kuacc/apps/cuda/11.3
+SLURM_NNODES=1
+USER=pniaz20
+LC_TELEPHONE=en_US.UTF-8
+LD_LIBRARY_PATH=/kuacc/apps/cuda/11.3/lib64:/kuacc/users/pniaz20/.conda/envs/myEnv001/lib:/kuacc/users/pniaz20/.conda/envs/myEnv001/lib
+LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+CONDA_EXE=/kuacc/apps/anaconda/2022.05/bin/conda
+CPATH=/kuacc/apps/cuda/11.3/include
+SLURM_JOBID=4477198
+SLURM_NTASKS=4
+_CE_CONDA=
+SLURM_TASKS_PER_NODE=4
+PATH=/kuacc/users/pniaz20/.conda/envs/myEnv001/bin:/kuacc/apps/anaconda/2022.05/condabin:/kuacc/apps/cuda/11.3/bin:/kuacc/apps/anaconda/2022.05/bin:/kuacc/apps/anaconda/2022.05:/scratch/users/pniaz20/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/kuacc/apps/scripts:/kuacc/users/pniaz20/.local/bin:/kuacc/apps/scripts:/kuacc/users/pniaz20/.local/bin
+MAIL=/var/mail/pniaz20
+GSETTINGS_SCHEMA_DIR=/kuacc/users/pniaz20/.conda/envs/myEnv001/share/glib-2.0/schemas
+SLURM_JOB_ID=4477198
+CONDA_PREFIX=/kuacc/users/pniaz20/.conda/envs/myEnv001
+LC_IDENTIFICATION=en_US.UTF-8
+SLURM_JOB_USER=pniaz20
+PWD=/kuacc/users/pniaz20
+_LMFILES_=/kuacc/etc/mod/anaconda/2022.05:/kuacc/etc/mod/cuda/11.3
+CUDA_VISIBLE_DEVICES=0
+LANG=en_US.UTF-8
+MODULEPATH=/kuacc/etc/mod
+SLURM_JOB_UID=1052943
+LC_MEASUREMENT=en_US.UTF-8
+KDEDIRS=/usr
+LOADEDMODULES=anaconda/2022.05:cuda/11.3
+SLURM_NODEID=0
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+SLURM_SUBMIT_DIR=/scratch/users/pniaz20
+SLURM_TASK_PID=167262
+SLURM_NPROCS=4
+SLURM_CPUS_ON_NODE=4
+_CE_M=
+SLURM_PROCID=0
+ENVIRONMENT=BATCH
+KRB5CCNAME=KEYRING:persistent:1052943
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SLURM_JOB_NODELIST=ai06
+HOME=/kuacc/users/pniaz20
+SHLVL=6
+SLURM_LOCALID=0
+VSCODE_GIT_ASKPASS_MAIN=/scratch/users/pniaz20/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass-main.js
+SLURM_JOB_GID=200513
+SLURM_JOB_CPUS_PER_NODE=4
+SLURM_CLUSTER_NAME=kuacc
+SLURM_GTIDS=0
+SLURM_SUBMIT_HOST=login02.kuacc.ku.edu.tr
+SLURM_JOB_PARTITION=ai
+CONDA_PYTHON_EXE=/kuacc/apps/anaconda/2022.05/bin/python
+LOGNAME=pniaz20
+QTLIB=/usr/lib64/qt-3.3/lib
+GPU_DEVICE_ORDINAL=0
+SLURM_JOB_ACCOUNT=ai
+SSH_CONNECTION=172.24.6.12 32782 172.20.238.2 22
+XDG_DATA_DIRS=/kuacc/users/pniaz20/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+VSCODE_GIT_IPC_HANDLE=/run/user/1052943/vscode-git-b60ef8b5e6.sock
+SLURM_JOB_NUM_NODES=1
+MODULESHOME=/usr/share/Modules
+VSCODE_IPC_HOOK_CLI=/run/user/1052943/vscode-ipc-6e1b827c-f5a1-4ec2-ac38-055cecebd961.sock
+CONDA_DEFAULT_ENV=myEnv001
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+BROWSER=/scratch/users/pniaz20/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/helpers/browser.sh
+GIT_ASKPASS=/scratch/users/pniaz20/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass.sh
+VSCODE_GIT_ASKPASS_NODE=/scratch/users/pniaz20/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node
+XDG_RUNTIME_DIR=/run/user/1052943
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+LC_TIME=en_US.UTF-8
+SLURM_MEM_PER_NODE=65536
+LC_NAME=en_US.UTF-8
+COLORTERM=truecolor
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}
+_=/usr/bin/env
+====================================================================================
+
+
+Setting stack size to unlimited...
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 2061307
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) 67108864
+open files                      (-n) 51200
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+
+REPO/comp541-project/capg_3dcnn/capg_dba_v002.py:233: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+Current Working Directory is:  /scratch/users/pniaz20
+Current Working Directory is now:  /scratch/users/pniaz20/REPO/comp541-project/capg_3dcnn
+numpy version:        1.22.0
+scipy version:        1.4.1
+sklearn version:      1.0.2
+seaborn version:      0.11.2
+pandas version:       1.5.2
+torch version:        1.12.1+cu113
+matplotlib version:   3.5.1
+Checking to see if PyTorch recognizes GPU...
+True
+Loading file:  dba_subj_8.parquet
+Loading file:  dba_subj_10.parquet
+Loading file:  dba_subj_2.parquet
+Loading file:  dba_subj_5.parquet
+Loading file:  dba_subj_14.parquet
+Loading file:  dba_subj_12.parquet
+Loading file:  dba_subj_4.parquet
+Loading file:  dba_subj_11.parquet
+Loading file:  dba_subj_17.parquet
+Loading file:  dba_subj_16.parquet
+Loading file:  dba_subj_18.parquet
+Loading file:  dba_subj_6.parquet
+Loading file:  dba_subj_15.parquet
+Loading file:  dba_subj_3.parquet
+Loading file:  dba_subj_9.parquet
+Loading file:  dba_subj_13.parquet
+Loading file:  dba_subj_1.parquet
+Loading file:  dba_subj_7.parquet
+dba_tot shape:  (1476000, 131)
+dba_mvc shape:  (36000, 131)
+dba shape:  (1440000, 131)
+Columns: 
+Index(['subject', 'gesture', 'trial', 'b_1_c_1', 'b_1_c_2', 'b_1_c_3',
+       'b_1_c_4', 'b_1_c_5', 'b_1_c_6', 'b_1_c_7',
+       ...
+       'b_8_c_7', 'b_8_c_8', 'b_8_c_9', 'b_8_c_10', 'b_8_c_11', 'b_8_c_12',
+       'b_8_c_13', 'b_8_c_14', 'b_8_c_15', 'b_8_c_16'],
+      dtype='object', length=131)
+Description: 
+            subject       gesture         trial
+count  1.440000e+06  1.440000e+06  1.440000e+06
+mean   9.500000e+00  4.500000e+00  5.500000e+00
+std    5.188129e+00  2.291289e+00  2.872282e+00
+min    1.000000e+00  1.000000e+00  1.000000e+00
+25%    5.000000e+00  2.750000e+00  3.000000e+00
+50%    9.500000e+00  4.500000e+00  5.500000e+00
+75%    1.400000e+01  6.250000e+00  8.000000e+00
+max    1.800000e+01  8.000000e+00  1.000000e+01
+
+#################################################################
+Using trial 1 for testing ...
+#################################################################
+
+Preparing the datacell ...
+# subjects:    18
+# conditions:  8
+# trials:      10
+
+
+subjects used for testing:    []
+conditions used for testing:  []
+trials used for testing:      [1]
+
+
+Iterating through all trials ...
+
+Concatenating arrays and generating outputs ...
+Validation data source:   testset
+Validation data portion:  0.05
+x_train:  (259200, 1, 64, 8, 16)
+y_train:  (259200,)
+x_val:  (1440, 1, 64, 8, 16)
+y_val:  (1440,)
+x_test:  (27360, 1, 64, 8, 16)
+y_test:  (27360,)
+Constructing output dictionary ...
+Size of output dictionary in bytes:  9438404197
+Done.
+
+Generating downsampled input and output from datacell ...
+x_train shape:  (25920, 1, 64, 8, 16)
+x_val shape:  (144, 1, 64, 8, 16)
+x_test shape:  (2736, 1, 64, 8, 16)
+y_train shape:  (25920,)
+y_val shape:  (144,)
+y_test shape:  (2736,)
+Generating TensorDatsets form the data ...
+Constructing model ...
+Model input shape:  (1, 64, 8, 16)
+Model output shape:  [8]
+EMGNet(
+  (prep_block): Sequential(
+    (0): BatchNorm3d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (1): ReLU()
+  )
+  (main_block): Conv_Network(
+    (net): Sequential(
+      (0): Conv_Block(
+        (net): Sequential(
+          (0): Conv3d(1, 16, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=same)
+          (1): BatchNorm3d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+      (1): Conv_Block(
+        (net): Sequential(
+          (0): Conv3d(16, 32, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=same)
+          (1): BatchNorm3d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+      (2): Conv_Block(
+        (net): Sequential(
+          (0): Conv3d(32, 32, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=same)
+          (1): BatchNorm3d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+      (3): Conv_Block(
+        (net): Sequential(
+          (0): Conv3d(32, 64, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=same)
+          (1): BatchNorm3d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+          (3): AdaptiveAvgPool3d(output_size=[1, 1, 1])
+        )
+      )
+      (4): Flatten(start_dim=1, end_dim=-1)
+      (5): Linear(in_features=64, out_features=8, bias=True)
+    )
+  )
+)
+Training model ...
+Total number of data points:      26064
+Number of training data points:   25920
+Number of validation data points: 144
+Number of training batches:    51
+Number of validation batches:  1
+Batch size:                    512
+Shape of training input from the dataloader:   torch.Size([512, 1, 64, 8, 16])
+Shape of training output from the dataloader:  torch.Size([512])
+Shape of validation input from the dataloader:   torch.Size([144, 1, 64, 8, 16])
+Shape of validation output from the dataloader:  torch.Size([144])
+Selected device:  cuda:0
+The learning rate has an exponential decay rate of 0.90000.
+Classification problem detected. We will look at accuracies.
+Training Progress:   0%|                                                     | 0/60 [00:00<?, ?it/s]Training Progress:   2%|▋                                          | 1/60 [01:12<1:10:59, 72.19s/it]Training Progress:   3%|█▍                                         | 2/60 [02:20<1:07:26, 69.77s/it]Training Progress:   5%|██▏                                        | 3/60 [03:29<1:05:59, 69.46s/it]Training Progress:   7%|██▊                                        | 4/60 [04:38<1:04:46, 69.41s/it]Training Progress:   8%|███▌                                       | 5/60 [05:48<1:03:35, 69.38s/it]Training Progress:  10%|████▎                                      | 6/60 [06:57<1:02:25, 69.35s/it]Training Progress:  12%|█████                                      | 7/60 [08:06<1:01:15, 69.34s/it]Training Progress:  13%|█████▋                                     | 8/60 [09:16<1:00:07, 69.38s/it]Training Progress:  15%|██████▊                                      | 9/60 [10:25<58:56, 69.34s/it]Training Progress:  17%|███████▎                                    | 10/60 [11:34<57:44, 69.29s/it]Training Progress:  18%|████████                                    | 11/60 [12:43<56:33, 69.26s/it]Training Progress:  20%|████████▊                                   | 12/60 [13:52<55:23, 69.23s/it]Training Progress:  22%|█████████▌                                  | 13/60 [15:02<54:13, 69.22s/it]Training Progress:  23%|██████████▎                                 | 14/60 [16:11<53:03, 69.21s/it]Training Progress:  25%|███████████                                 | 15/60 [17:20<51:55, 69.23s/it]Training Progress:  27%|███████████▋                                | 16/60 [18:29<50:45, 69.23s/it]Training Progress:  28%|████████████▍                               | 17/60 [19:38<49:36, 69.23s/it]Training Progress:  30%|█████████████▏                              | 18/60 [20:48<48:27, 69.23s/it]Training Progress:  32%|█████████████▉                              | 19/60 [21:57<47:18, 69.24s/it]Training Progress:  33%|██████████████▋                             | 20/60 [23:06<46:10, 69.25s/it]Training Progress:  35%|███████████████▍                            | 21/60 [24:16<45:01, 69.28s/it]Training Progress:  37%|████████████████▏                           | 22/60 [25:25<43:52, 69.27s/it]Training Progress:  38%|████████████████▊                           | 23/60 [26:34<42:42, 69.26s/it]Training Progress:  40%|█████████████████▌                          | 24/60 [27:43<41:33, 69.26s/it]Training Progress:  42%|██████████████████▎                         | 25/60 [28:53<40:23, 69.25s/it]Training Progress:  43%|███████████████████                         | 26/60 [30:02<39:14, 69.24s/it]Training Progress:  45%|███████████████████▊                        | 27/60 [31:11<38:05, 69.24s/it]Training Progress:  47%|████████████████████▌                       | 28/60 [32:20<36:56, 69.28s/it]Training Progress:  48%|█████████████████████▎                      | 29/60 [33:30<35:47, 69.28s/it]Training Progress:  50%|██████████████████████                      | 30/60 [34:39<34:38, 69.28s/it]Training Progress:  52%|██████████████████████▋                     | 31/60 [35:48<33:28, 69.27s/it]Training Progress:  53%|███████████████████████▍                    | 32/60 [36:57<32:19, 69.26s/it]Training Progress:  55%|████████████████████████▏                   | 33/60 [38:07<31:09, 69.25s/it]Training Progress:  57%|████████████████████████▉                   | 34/60 [39:16<30:01, 69.27s/it]Training Progress:  58%|█████████████████████████▋                  | 35/60 [40:25<28:51, 69.26s/it]Training Progress:  60%|██████████████████████████▍                 | 36/60 [41:34<27:41, 69.25s/it]Training Progress:  62%|███████████████████████████▏                | 37/60 [42:44<26:32, 69.24s/it]Training Progress:  63%|███████████████████████████▊                | 38/60 [43:53<25:23, 69.23s/it]Training Progress:  65%|████████████████████████████▌               | 39/60 [45:02<24:13, 69.22s/it]Training Progress:  67%|█████████████████████████████▎              | 40/60 [46:11<23:04, 69.22s/it]Training Progress:  68%|██████████████████████████████              | 41/60 [47:21<21:55, 69.23s/it]Training Progress:  70%|██████████████████████████████▊             | 42/60 [48:30<20:45, 69.22s/it]Training Progress:  72%|███████████████████████████████▌            | 43/60 [49:39<19:36, 69.21s/it]Training Progress:  73%|████████████████████████████████▎           | 44/60 [50:48<18:27, 69.20s/it]Training Progress:  75%|█████████████████████████████████           | 45/60 [51:57<17:17, 69.19s/it]Training Progress:  77%|█████████████████████████████████▋          | 46/60 [53:06<16:08, 69.18s/it]Training Progress:  78%|██████████████████████████████████▍         | 47/60 [54:16<14:59, 69.20s/it]Training Progress:  80%|███████████████████████████████████▏        | 48/60 [55:25<13:50, 69.19s/it]Training Progress:  82%|███████████████████████████████████▉        | 49/60 [56:34<12:42, 69.30s/it]Training Progress:  83%|████████████████████████████████████▋       | 50/60 [57:44<11:33, 69.39s/it]Training Progress:  85%|█████████████████████████████████████▍      | 51/60 [58:54<10:24, 69.44s/it]Training Progress:  87%|████████████████████████████████████▍     | 52/60 [1:00:03<09:15, 69.47s/it]Training Progress:  88%|█████████████████████████████████████     | 53/60 [1:01:13<08:06, 69.49s/it]Training Progress:  90%|█████████████████████████████████████▊    | 54/60 [1:02:22<06:57, 69.53s/it]Training Progress:  92%|██████████████████████████████████████▌   | 55/60 [1:03:32<05:47, 69.52s/it]Training Progress:  93%|███████████████████████████████████████▏  | 56/60 [1:04:41<04:38, 69.52s/it]Training Progress:  95%|███████████████████████████████████████▉  | 57/60 [1:05:51<03:28, 69.50s/it]Training Progress:  97%|████████████████████████████████████████▌ | 58/60 [1:07:00<02:18, 69.48s/it]Training Progress:  98%|█████████████████████████████████████████▎| 59/60 [1:08:10<01:09, 69.46s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:19<00:00, 69.49s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:19<00:00, 69.33s/it]
+Finished Training.
+Training process took 4159.56 seconds.
+Done training.
+Updating dictionary for logging ...
+Evaluating model on test set ...
+Preparing data...
+selected device:  cuda
+Evaluating model...
+[█████████████████████████████████] Loss: 0.7564 | Accuracy: 0.7317
+Done.
+Done with this fold of the K-fold study.
+
+#################################################################
+Using trial 2 for testing ...
+#################################################################
+
+Preparing the datacell ...
+# subjects:    18
+# conditions:  8
+# trials:      10
+
+
+subjects used for testing:    []
+conditions used for testing:  []
+trials used for testing:      [2]
+
+
+Iterating through all trials ...
+
+Concatenating arrays and generating outputs ...
+Validation data source:   testset
+Validation data portion:  0.05
+x_train:  (259200, 1, 64, 8, 16)
+y_train:  (259200,)
+x_val:  (1440, 1, 64, 8, 16)
+y_val:  (1440,)
+x_test:  (27360, 1, 64, 8, 16)
+y_test:  (27360,)
+Constructing output dictionary ...
+Size of output dictionary in bytes:  9438404454
+Done.
+
+Generating downsampled input and output from datacell ...
+x_train shape:  (25920, 1, 64, 8, 16)
+x_val shape:  (144, 1, 64, 8, 16)
+x_test shape:  (2736, 1, 64, 8, 16)
+y_train shape:  (25920,)
+y_val shape:  (144,)
+y_test shape:  (2736,)
+Generating TensorDatsets form the data ...
+Constructing model ...
+Model input shape:  (1, 64, 8, 16)
+Model output shape:  [8]
+Training model ...
+Total number of data points:      26064
+Number of training data points:   25920
+Number of validation data points: 144
+Number of training batches:    51
+Number of validation batches:  1
+Batch size:                    512
+Shape of training input from the dataloader:   torch.Size([512, 1, 64, 8, 16])
+Shape of training output from the dataloader:  torch.Size([512])
+Shape of validation input from the dataloader:   torch.Size([144, 1, 64, 8, 16])
+Shape of validation output from the dataloader:  torch.Size([144])
+Selected device:  cuda:0
+The learning rate has an exponential decay rate of 0.90000.
+Classification problem detected. We will look at accuracies.
+Training Progress:   0%|                                                     | 0/60 [00:00<?, ?it/s]Training Progress:   2%|▋                                          | 1/60 [01:08<1:06:53, 68.03s/it]Training Progress:   3%|█▍                                         | 2/60 [02:17<1:06:22, 68.66s/it]Training Progress:   5%|██▏                                        | 3/60 [03:26<1:05:34, 69.03s/it]Training Progress:   7%|██▊                                        | 4/60 [04:36<1:04:38, 69.25s/it]Training Progress:   8%|███▌                                       | 5/60 [05:45<1:03:35, 69.38s/it]Training Progress:  10%|████▎                                      | 6/60 [06:55<1:02:32, 69.49s/it]Training Progress:  12%|█████                                      | 7/60 [08:05<1:01:24, 69.53s/it]Training Progress:  13%|█████▋                                     | 8/60 [09:14<1:00:15, 69.54s/it]Training Progress:  15%|██████▊                                      | 9/60 [10:24<59:06, 69.54s/it]Training Progress:  17%|███████▎                                    | 10/60 [11:33<57:57, 69.54s/it]Training Progress:  18%|████████                                    | 11/60 [12:43<56:47, 69.54s/it]Training Progress:  20%|████████▊                                   | 12/60 [13:52<55:37, 69.54s/it]Training Progress:  22%|█████████▌                                  | 13/60 [15:02<54:29, 69.56s/it]Training Progress:  23%|██████████▎                                 | 14/60 [16:11<53:18, 69.54s/it]Training Progress:  25%|███████████                                 | 15/60 [17:21<52:08, 69.53s/it]Training Progress:  27%|███████████▋                                | 16/60 [18:30<50:58, 69.52s/it]Training Progress:  28%|████████████▍                               | 17/60 [19:40<49:49, 69.51s/it]Training Progress:  30%|█████████████▏                              | 18/60 [20:49<48:39, 69.51s/it]Training Progress:  32%|█████████████▉                              | 19/60 [21:59<47:31, 69.54s/it]Training Progress:  33%|██████████████▋                             | 20/60 [23:09<46:21, 69.53s/it]Training Progress:  35%|███████████████▍                            | 21/60 [24:18<45:11, 69.52s/it]Training Progress:  37%|████████████████▏                           | 22/60 [25:28<44:00, 69.50s/it]Training Progress:  38%|████████████████▊                           | 23/60 [26:37<42:50, 69.48s/it]Training Progress:  40%|█████████████████▌                          | 24/60 [27:46<41:40, 69.45s/it]Training Progress:  42%|██████████████████▎                         | 25/60 [28:56<40:30, 69.43s/it]Training Progress:  43%|███████████████████                         | 26/60 [30:05<39:21, 69.45s/it]Training Progress:  45%|███████████████████▊                        | 27/60 [31:15<38:11, 69.44s/it]Training Progress:  47%|████████████████████▌                       | 28/60 [32:24<37:02, 69.45s/it]Training Progress:  48%|█████████████████████▎                      | 29/60 [33:34<35:52, 69.44s/it]Training Progress:  50%|██████████████████████                      | 30/60 [34:43<34:43, 69.44s/it]Training Progress:  52%|██████████████████████▋                     | 31/60 [35:52<33:33, 69.43s/it]Training Progress:  53%|███████████████████████▍                    | 32/60 [37:02<32:23, 69.42s/it]Training Progress:  55%|████████████████████████▏                   | 33/60 [38:11<31:15, 69.46s/it]Training Progress:  57%|████████████████████████▉                   | 34/60 [39:21<30:05, 69.45s/it]Training Progress:  58%|█████████████████████████▋                  | 35/60 [40:30<28:56, 69.46s/it]Training Progress:  60%|██████████████████████████▍                 | 36/60 [41:40<27:47, 69.47s/it]Training Progress:  62%|███████████████████████████▏                | 37/60 [42:49<26:38, 69.48s/it]Training Progress:  63%|███████████████████████████▊                | 38/60 [43:59<25:28, 69.49s/it]Training Progress:  65%|████████████████████████████▌               | 39/60 [45:08<24:19, 69.52s/it]Training Progress:  67%|█████████████████████████████▎              | 40/60 [46:18<23:10, 69.51s/it]Training Progress:  68%|██████████████████████████████              | 41/60 [47:27<22:00, 69.50s/it]Training Progress:  70%|██████████████████████████████▊             | 42/60 [48:37<20:50, 69.49s/it]Training Progress:  72%|███████████████████████████████▌            | 43/60 [49:46<19:41, 69.49s/it]Training Progress:  73%|████████████████████████████████▎           | 44/60 [50:56<18:31, 69.48s/it]Training Progress:  75%|█████████████████████████████████           | 45/60 [52:05<17:22, 69.48s/it]Training Progress:  77%|█████████████████████████████████▋          | 46/60 [53:15<16:13, 69.51s/it]Training Progress:  78%|██████████████████████████████████▍         | 47/60 [54:24<15:03, 69.51s/it]Training Progress:  80%|███████████████████████████████████▏        | 48/60 [55:34<13:53, 69.49s/it]Training Progress:  82%|███████████████████████████████████▉        | 49/60 [56:43<12:44, 69.48s/it]Training Progress:  83%|████████████████████████████████████▋       | 50/60 [57:53<11:34, 69.48s/it]Training Progress:  85%|█████████████████████████████████████▍      | 51/60 [59:02<10:25, 69.47s/it]Training Progress:  87%|████████████████████████████████████▍     | 52/60 [1:00:12<09:15, 69.50s/it]Training Progress:  88%|█████████████████████████████████████     | 53/60 [1:01:21<08:06, 69.50s/it]Training Progress:  90%|█████████████████████████████████████▊    | 54/60 [1:02:31<06:56, 69.50s/it]Training Progress:  92%|██████████████████████████████████████▌   | 55/60 [1:03:40<05:47, 69.50s/it]Training Progress:  93%|███████████████████████████████████████▏  | 56/60 [1:04:50<04:38, 69.50s/it]Training Progress:  95%|███████████████████████████████████████▉  | 57/60 [1:05:59<03:28, 69.50s/it]Training Progress:  97%|████████████████████████████████████████▌ | 58/60 [1:07:09<02:18, 69.49s/it]Training Progress:  98%|█████████████████████████████████████████▎| 59/60 [1:08:18<01:09, 69.51s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:28<00:00, 69.47s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:28<00:00, 69.47s/it]
+Finished Training.
+Training process took 4168.04 seconds.
+Done training.
+Updating dictionary for logging ...
+Evaluating model on test set ...
+Preparing data...
+selected device:  cuda
+Evaluating model...
+[█████████████████████████████████] Loss: 0.6179 | Accuracy: 0.8092
+Done.
+Done with this fold of the K-fold study.
+
+#################################################################
+Using trial 3 for testing ...
+#################################################################
+
+Preparing the datacell ...
+# subjects:    18
+# conditions:  8
+# trials:      10
+
+
+subjects used for testing:    []
+conditions used for testing:  []
+trials used for testing:      [3]
+
+
+Iterating through all trials ...
+
+Concatenating arrays and generating outputs ...
+Validation data source:   testset
+Validation data portion:  0.05
+x_train:  (259200, 1, 64, 8, 16)
+y_train:  (259200,)
+x_val:  (1440, 1, 64, 8, 16)
+y_val:  (1440,)
+x_test:  (27360, 1, 64, 8, 16)
+y_test:  (27360,)
+Constructing output dictionary ...
+Size of output dictionary in bytes:  9438404454
+Done.
+
+Generating downsampled input and output from datacell ...
+x_train shape:  (25920, 1, 64, 8, 16)
+x_val shape:  (144, 1, 64, 8, 16)
+x_test shape:  (2736, 1, 64, 8, 16)
+y_train shape:  (25920,)
+y_val shape:  (144,)
+y_test shape:  (2736,)
+Generating TensorDatsets form the data ...
+Constructing model ...
+Model input shape:  (1, 64, 8, 16)
+Model output shape:  [8]
+Training model ...
+Total number of data points:      26064
+Number of training data points:   25920
+Number of validation data points: 144
+Number of training batches:    51
+Number of validation batches:  1
+Batch size:                    512
+Shape of training input from the dataloader:   torch.Size([512, 1, 64, 8, 16])
+Shape of training output from the dataloader:  torch.Size([512])
+Shape of validation input from the dataloader:   torch.Size([144, 1, 64, 8, 16])
+Shape of validation output from the dataloader:  torch.Size([144])
+Selected device:  cuda:0
+The learning rate has an exponential decay rate of 0.90000.
+Classification problem detected. We will look at accuracies.
+Training Progress:   0%|                                                     | 0/60 [00:00<?, ?it/s]Training Progress:   2%|▋                                          | 1/60 [01:08<1:06:53, 68.02s/it]Training Progress:   3%|█▍                                         | 2/60 [02:16<1:06:13, 68.51s/it]Training Progress:   5%|██▏                                        | 3/60 [03:26<1:05:25, 68.87s/it]Training Progress:   7%|██▊                                        | 4/60 [04:35<1:04:30, 69.11s/it]Training Progress:   8%|███▌                                       | 5/60 [05:45<1:03:30, 69.29s/it]Training Progress:  10%|████▎                                      | 6/60 [06:54<1:02:25, 69.36s/it]Training Progress:  12%|█████                                      | 7/60 [08:04<1:01:18, 69.41s/it]Training Progress:  13%|█████▋                                     | 8/60 [09:13<1:00:10, 69.42s/it]Training Progress:  15%|██████▊                                      | 9/60 [10:23<59:00, 69.43s/it]Training Progress:  17%|███████▎                                    | 10/60 [11:32<57:50, 69.42s/it]Training Progress:  18%|████████                                    | 11/60 [12:42<56:42, 69.43s/it]Training Progress:  20%|████████▊                                   | 12/60 [13:51<55:31, 69.41s/it]Training Progress:  22%|█████████▌                                  | 13/60 [15:00<54:21, 69.39s/it]Training Progress:  23%|██████████▎                                 | 14/60 [16:10<53:11, 69.38s/it]Training Progress:  25%|███████████                                 | 15/60 [17:19<52:02, 69.38s/it]Training Progress:  27%|███████████▋                                | 16/60 [18:28<50:53, 69.40s/it]Training Progress:  28%|████████████▍                               | 17/60 [19:38<49:45, 69.42s/it]Training Progress:  30%|█████████████▏                              | 18/60 [20:47<48:37, 69.47s/it]Training Progress:  32%|█████████████▉                              | 19/60 [21:57<47:28, 69.47s/it]Training Progress:  33%|██████████████▋                             | 20/60 [23:06<46:18, 69.46s/it]Training Progress:  35%|███████████████▍                            | 21/60 [24:16<45:07, 69.42s/it]Training Progress:  37%|████████████████▏                           | 22/60 [25:25<43:56, 69.38s/it]Training Progress:  38%|████████████████▊                           | 23/60 [26:34<42:45, 69.33s/it]Training Progress:  40%|█████████████████▌                          | 24/60 [27:43<41:35, 69.32s/it]Training Progress:  42%|██████████████████▎                         | 25/60 [28:53<40:25, 69.31s/it]Training Progress:  43%|███████████████████                         | 26/60 [30:02<39:16, 69.31s/it]Training Progress:  45%|███████████████████▊                        | 27/60 [31:11<38:05, 69.27s/it]Training Progress:  47%|████████████████████▌                       | 28/60 [32:20<36:55, 69.23s/it]Training Progress:  48%|█████████████████████▎                      | 29/60 [33:30<35:45, 69.22s/it]Training Progress:  50%|██████████████████████                      | 30/60 [34:39<34:37, 69.26s/it]Training Progress:  52%|██████████████████████▋                     | 31/60 [35:48<33:30, 69.34s/it]Training Progress:  53%|███████████████████████▍                    | 32/60 [36:58<32:22, 69.37s/it]Training Progress:  55%|████████████████████████▏                   | 33/60 [38:07<31:13, 69.39s/it]Training Progress:  57%|████████████████████████▉                   | 34/60 [39:17<30:04, 69.40s/it]Training Progress:  58%|█████████████████████████▋                  | 35/60 [40:26<28:55, 69.40s/it]Training Progress:  60%|██████████████████████████▍                 | 36/60 [41:36<27:45, 69.42s/it]Training Progress:  62%|███████████████████████████▏                | 37/60 [42:45<26:37, 69.46s/it]Training Progress:  63%|███████████████████████████▊                | 38/60 [43:55<25:28, 69.47s/it]Training Progress:  65%|████████████████████████████▌               | 39/60 [45:04<24:19, 69.48s/it]Training Progress:  67%|█████████████████████████████▎              | 40/60 [46:14<23:09, 69.49s/it]Training Progress:  68%|██████████████████████████████              | 41/60 [47:23<22:00, 69.50s/it]Training Progress:  70%|██████████████████████████████▊             | 42/60 [48:33<20:50, 69.49s/it]Training Progress:  72%|███████████████████████████████▌            | 43/60 [49:42<19:41, 69.50s/it]Training Progress:  73%|████████████████████████████████▎           | 44/60 [50:52<18:32, 69.53s/it]Training Progress:  75%|█████████████████████████████████           | 45/60 [52:01<17:22, 69.51s/it]Training Progress:  77%|█████████████████████████████████▋          | 46/60 [53:11<16:12, 69.49s/it]Training Progress:  78%|██████████████████████████████████▍         | 47/60 [54:20<15:03, 69.47s/it]Training Progress:  80%|███████████████████████████████████▏        | 48/60 [55:30<13:53, 69.45s/it]Training Progress:  82%|███████████████████████████████████▉        | 49/60 [56:39<12:43, 69.45s/it]Training Progress:  83%|████████████████████████████████████▋       | 50/60 [57:48<11:34, 69.44s/it]Training Progress:  85%|█████████████████████████████████████▍      | 51/60 [58:58<10:25, 69.46s/it]Training Progress:  87%|████████████████████████████████████▍     | 52/60 [1:00:07<09:15, 69.47s/it]Training Progress:  88%|█████████████████████████████████████     | 53/60 [1:01:17<08:06, 69.48s/it]Training Progress:  90%|█████████████████████████████████████▊    | 54/60 [1:02:26<06:56, 69.48s/it]Training Progress:  92%|██████████████████████████████████████▌   | 55/60 [1:03:36<05:47, 69.49s/it]Training Progress:  93%|███████████████████████████████████████▏  | 56/60 [1:04:45<04:37, 69.49s/it]Training Progress:  95%|███████████████████████████████████████▉  | 57/60 [1:05:55<03:28, 69.51s/it]Training Progress:  97%|████████████████████████████████████████▌ | 58/60 [1:07:04<02:19, 69.51s/it]Training Progress:  98%|█████████████████████████████████████████▎| 59/60 [1:08:14<01:09, 69.49s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:23<00:00, 69.49s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:23<00:00, 69.40s/it]
+Finished Training.
+Training process took 4163.92 seconds.
+Done training.
+Updating dictionary for logging ...
+Evaluating model on test set ...
+Preparing data...
+selected device:  cuda
+Evaluating model...
+[█████████████████████████████████] Loss: 0.5385 | Accuracy: 0.8114
+Done.
+Done with this fold of the K-fold study.
+
+#################################################################
+Using trial 4 for testing ...
+#################################################################
+
+Preparing the datacell ...
+# subjects:    18
+# conditions:  8
+# trials:      10
+
+
+subjects used for testing:    []
+conditions used for testing:  []
+trials used for testing:      [4]
+
+
+Iterating through all trials ...
+
+Concatenating arrays and generating outputs ...
+Validation data source:   testset
+Validation data portion:  0.05
+x_train:  (259200, 1, 64, 8, 16)
+y_train:  (259200,)
+x_val:  (1440, 1, 64, 8, 16)
+y_val:  (1440,)
+x_test:  (27360, 1, 64, 8, 16)
+y_test:  (27360,)
+Constructing output dictionary ...
+Size of output dictionary in bytes:  9438404454
+Done.
+
+Generating downsampled input and output from datacell ...
+x_train shape:  (25920, 1, 64, 8, 16)
+x_val shape:  (144, 1, 64, 8, 16)
+x_test shape:  (2736, 1, 64, 8, 16)
+y_train shape:  (25920,)
+y_val shape:  (144,)
+y_test shape:  (2736,)
+Generating TensorDatsets form the data ...
+Constructing model ...
+Model input shape:  (1, 64, 8, 16)
+Model output shape:  [8]
+Training model ...
+Total number of data points:      26064
+Number of training data points:   25920
+Number of validation data points: 144
+Number of training batches:    51
+Number of validation batches:  1
+Batch size:                    512
+Shape of training input from the dataloader:   torch.Size([512, 1, 64, 8, 16])
+Shape of training output from the dataloader:  torch.Size([512])
+Shape of validation input from the dataloader:   torch.Size([144, 1, 64, 8, 16])
+Shape of validation output from the dataloader:  torch.Size([144])
+Selected device:  cuda:0
+The learning rate has an exponential decay rate of 0.90000.
+Classification problem detected. We will look at accuracies.
+Training Progress:   0%|                                                     | 0/60 [00:00<?, ?it/s]Training Progress:   2%|▋                                          | 1/60 [01:08<1:06:53, 68.02s/it]Training Progress:   3%|█▍                                         | 2/60 [02:17<1:06:19, 68.61s/it]Training Progress:   5%|██▏                                        | 3/60 [03:26<1:05:32, 68.98s/it]Training Progress:   7%|██▊                                        | 4/60 [04:36<1:04:38, 69.26s/it]Training Progress:   8%|███▌                                       | 5/60 [05:45<1:03:35, 69.38s/it]Training Progress:  10%|████▎                                      | 6/60 [06:55<1:02:31, 69.46s/it]Training Progress:  12%|█████                                      | 7/60 [08:05<1:01:24, 69.52s/it]Training Progress:  13%|█████▋                                     | 8/60 [09:14<1:00:16, 69.55s/it]Training Progress:  15%|██████▊                                      | 9/60 [10:24<59:07, 69.56s/it]Training Progress:  17%|███████▎                                    | 10/60 [11:33<57:57, 69.56s/it]Training Progress:  18%|████████                                    | 11/60 [12:43<56:49, 69.58s/it]Training Progress:  20%|████████▊                                   | 12/60 [13:52<55:39, 69.56s/it]Training Progress:  22%|█████████▌                                  | 13/60 [15:02<54:28, 69.55s/it]Training Progress:  23%|██████████▎                                 | 14/60 [16:11<53:18, 69.54s/it]Training Progress:  25%|███████████                                 | 15/60 [17:21<52:08, 69.53s/it]Training Progress:  27%|███████████▋                                | 16/60 [18:30<50:58, 69.51s/it]Training Progress:  28%|████████████▍                               | 17/60 [19:40<49:49, 69.53s/it]Training Progress:  30%|█████████████▏                              | 18/60 [20:49<48:39, 69.52s/it]Training Progress:  32%|█████████████▉                              | 19/60 [21:59<47:30, 69.52s/it]Training Progress:  33%|██████████████▋                             | 20/60 [23:09<46:20, 69.52s/it]Training Progress:  35%|███████████████▍                            | 21/60 [24:18<45:11, 69.52s/it]Training Progress:  37%|████████████████▏                           | 22/60 [25:28<44:01, 69.52s/it]Training Progress:  38%|████████████████▊                           | 23/60 [26:37<42:52, 69.53s/it]Training Progress:  40%|█████████████████▌                          | 24/60 [27:47<41:44, 69.56s/it]Training Progress:  42%|██████████████████▎                         | 25/60 [28:56<40:34, 69.56s/it]Training Progress:  43%|███████████████████                         | 26/60 [30:06<39:24, 69.56s/it]Training Progress:  45%|███████████████████▊                        | 27/60 [31:15<38:14, 69.54s/it]Training Progress:  47%|████████████████████▌                       | 28/60 [32:25<37:04, 69.53s/it]Training Progress:  48%|█████████████████████▎                      | 29/60 [33:34<35:54, 69.51s/it]Training Progress:  50%|██████████████████████                      | 30/60 [34:44<34:45, 69.53s/it]Training Progress:  52%|██████████████████████▋                     | 31/60 [35:53<33:35, 69.51s/it]Training Progress:  53%|███████████████████████▍                    | 32/60 [37:03<32:25, 69.50s/it]Training Progress:  55%|████████████████████████▏                   | 33/60 [38:12<31:16, 69.50s/it]Training Progress:  57%|████████████████████████▉                   | 34/60 [39:22<30:07, 69.50s/it]Training Progress:  58%|█████████████████████████▋                  | 35/60 [40:31<28:57, 69.50s/it]Training Progress:  60%|██████████████████████████▍                 | 36/60 [41:41<27:48, 69.53s/it]Training Progress:  62%|███████████████████████████▏                | 37/60 [42:50<26:39, 69.52s/it]Training Progress:  63%|███████████████████████████▊                | 38/60 [44:00<25:29, 69.51s/it]Training Progress:  65%|████████████████████████████▌               | 39/60 [45:09<24:19, 69.51s/it]Training Progress:  67%|█████████████████████████████▎              | 40/60 [46:19<23:10, 69.51s/it]Training Progress:  68%|██████████████████████████████              | 41/60 [47:29<22:00, 69.52s/it]Training Progress:  70%|██████████████████████████████▊             | 42/60 [48:38<20:51, 69.53s/it]Training Progress:  72%|███████████████████████████████▌            | 43/60 [49:48<19:42, 69.57s/it]Training Progress:  73%|████████████████████████████████▎           | 44/60 [50:57<18:32, 69.55s/it]Training Progress:  75%|█████████████████████████████████           | 45/60 [52:07<17:22, 69.50s/it]Training Progress:  77%|█████████████████████████████████▋          | 46/60 [53:16<16:12, 69.45s/it]Training Progress:  78%|██████████████████████████████████▍         | 47/60 [54:25<15:02, 69.41s/it]Training Progress:  80%|███████████████████████████████████▏        | 48/60 [55:35<13:52, 69.37s/it]Training Progress:  82%|███████████████████████████████████▉        | 49/60 [56:44<12:42, 69.36s/it]Training Progress:  83%|████████████████████████████████████▋       | 50/60 [57:53<11:33, 69.37s/it]Training Progress:  85%|█████████████████████████████████████▍      | 51/60 [59:03<10:24, 69.35s/it]Training Progress:  87%|████████████████████████████████████▍     | 52/60 [1:00:12<09:14, 69.34s/it]Training Progress:  88%|█████████████████████████████████████     | 53/60 [1:01:21<08:05, 69.35s/it]Training Progress:  90%|█████████████████████████████████████▊    | 54/60 [1:02:31<06:56, 69.39s/it]Training Progress:  92%|██████████████████████████████████████▌   | 55/60 [1:03:40<05:47, 69.43s/it]Training Progress:  93%|███████████████████████████████████████▏  | 56/60 [1:04:50<04:37, 69.46s/it]Training Progress:  95%|███████████████████████████████████████▉  | 57/60 [1:05:59<03:28, 69.44s/it]Training Progress:  97%|████████████████████████████████████████▌ | 58/60 [1:07:09<02:18, 69.41s/it]Training Progress:  98%|█████████████████████████████████████████▎| 59/60 [1:08:18<01:09, 69.38s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:27<00:00, 69.37s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:27<00:00, 69.46s/it]
+Finished Training.
+Training process took 4167.70 seconds.
+Done training.
+Updating dictionary for logging ...
+Evaluating model on test set ...
+Preparing data...
+selected device:  cuda
+Evaluating model...
+[█████████████████████████████████] Loss: 0.4861 | Accuracy: 0.8443
+Done.
+Done with this fold of the K-fold study.
+
+#################################################################
+Using trial 5 for testing ...
+#################################################################
+
+Preparing the datacell ...
+# subjects:    18
+# conditions:  8
+# trials:      10
+
+
+subjects used for testing:    []
+conditions used for testing:  []
+trials used for testing:      [5]
+
+
+Iterating through all trials ...
+
+Concatenating arrays and generating outputs ...
+Validation data source:   testset
+Validation data portion:  0.05
+x_train:  (259200, 1, 64, 8, 16)
+y_train:  (259200,)
+x_val:  (1440, 1, 64, 8, 16)
+y_val:  (1440,)
+x_test:  (27360, 1, 64, 8, 16)
+y_test:  (27360,)
+Constructing output dictionary ...
+Size of output dictionary in bytes:  9438404454
+Done.
+
+Generating downsampled input and output from datacell ...
+x_train shape:  (25920, 1, 64, 8, 16)
+x_val shape:  (144, 1, 64, 8, 16)
+x_test shape:  (2736, 1, 64, 8, 16)
+y_train shape:  (25920,)
+y_val shape:  (144,)
+y_test shape:  (2736,)
+Generating TensorDatsets form the data ...
+Constructing model ...
+Model input shape:  (1, 64, 8, 16)
+Model output shape:  [8]
+Training model ...
+Total number of data points:      26064
+Number of training data points:   25920
+Number of validation data points: 144
+Number of training batches:    51
+Number of validation batches:  1
+Batch size:                    512
+Shape of training input from the dataloader:   torch.Size([512, 1, 64, 8, 16])
+Shape of training output from the dataloader:  torch.Size([512])
+Shape of validation input from the dataloader:   torch.Size([144, 1, 64, 8, 16])
+Shape of validation output from the dataloader:  torch.Size([144])
+Selected device:  cuda:0
+The learning rate has an exponential decay rate of 0.90000.
+Classification problem detected. We will look at accuracies.
+Training Progress:   0%|                                                     | 0/60 [00:00<?, ?it/s]Training Progress:   2%|▋                                          | 1/60 [01:07<1:06:51, 67.99s/it]Training Progress:   3%|█▍                                         | 2/60 [02:16<1:06:17, 68.57s/it]Training Progress:   5%|██▏                                        | 3/60 [03:26<1:05:26, 68.89s/it]Training Progress:   7%|██▊                                        | 4/60 [04:35<1:04:28, 69.09s/it]Training Progress:   8%|███▌                                       | 5/60 [05:44<1:03:25, 69.19s/it]Training Progress:  10%|████▎                                      | 6/60 [06:54<1:02:19, 69.25s/it]Training Progress:  12%|█████                                      | 7/60 [08:03<1:01:12, 69.29s/it]Training Progress:  13%|█████▋                                     | 8/60 [09:13<1:00:05, 69.33s/it]Training Progress:  15%|██████▊                                      | 9/60 [10:22<58:57, 69.36s/it]Training Progress:  17%|███████▎                                    | 10/60 [11:32<57:49, 69.39s/it]Training Progress:  18%|████████                                    | 11/60 [12:41<56:40, 69.40s/it]Training Progress:  20%|████████▊                                   | 12/60 [13:50<55:30, 69.38s/it]Training Progress:  22%|█████████▌                                  | 13/60 [15:00<54:20, 69.37s/it]Training Progress:  23%|██████████▎                                 | 14/60 [16:09<53:09, 69.35s/it]Training Progress:  25%|███████████                                 | 15/60 [17:18<52:01, 69.37s/it]Training Progress:  27%|███████████▋                                | 16/60 [18:28<50:52, 69.37s/it]Training Progress:  28%|████████████▍                               | 17/60 [19:37<49:43, 69.39s/it]Training Progress:  30%|█████████████▏                              | 18/60 [20:47<48:35, 69.41s/it]Training Progress:  32%|█████████████▉                              | 19/60 [21:56<47:26, 69.43s/it]Training Progress:  33%|██████████████▋                             | 20/60 [23:06<46:17, 69.44s/it]Training Progress:  35%|███████████████▍                            | 21/60 [24:15<45:09, 69.47s/it]Training Progress:  37%|████████████████▏                           | 22/60 [25:25<43:59, 69.47s/it]Training Progress:  38%|████████████████▊                           | 23/60 [26:34<42:49, 69.46s/it]Training Progress:  40%|█████████████████▌                          | 24/60 [27:43<41:40, 69.45s/it]Training Progress:  42%|██████████████████▎                         | 25/60 [28:53<40:30, 69.45s/it]Training Progress:  43%|███████████████████                         | 26/60 [30:02<39:21, 69.45s/it]Training Progress:  45%|███████████████████▊                        | 27/60 [31:12<38:11, 69.43s/it]Training Progress:  47%|████████████████████▌                       | 28/60 [32:21<37:01, 69.42s/it]Training Progress:  48%|█████████████████████▎                      | 29/60 [33:30<35:50, 69.38s/it]Training Progress:  50%|██████████████████████                      | 30/60 [34:40<34:40, 69.36s/it]Training Progress:  52%|██████████████████████▋                     | 31/60 [35:49<33:31, 69.37s/it]Training Progress:  53%|███████████████████████▍                    | 32/60 [36:58<32:21, 69.36s/it]Training Progress:  55%|████████████████████████▏                   | 33/60 [38:08<31:12, 69.34s/it]Training Progress:  57%|████████████████████████▉                   | 34/60 [39:17<30:03, 69.35s/it]Training Progress:  58%|█████████████████████████▋                  | 35/60 [40:26<28:53, 69.35s/it]Training Progress:  60%|██████████████████████████▍                 | 36/60 [41:36<27:44, 69.36s/it]Training Progress:  62%|███████████████████████████▏                | 37/60 [42:45<26:35, 69.37s/it]Training Progress:  63%|███████████████████████████▊                | 38/60 [43:55<25:25, 69.35s/it]Training Progress:  65%|████████████████████████████▌               | 39/60 [45:04<24:15, 69.32s/it]Training Progress:  67%|█████████████████████████████▎              | 40/60 [46:13<23:05, 69.30s/it]Training Progress:  68%|██████████████████████████████              | 41/60 [47:22<21:57, 69.33s/it]Training Progress:  70%|██████████████████████████████▊             | 42/60 [48:32<20:48, 69.34s/it]Training Progress:  72%|███████████████████████████████▌            | 43/60 [49:41<19:38, 69.32s/it]Training Progress:  73%|████████████████████████████████▎           | 44/60 [50:50<18:28, 69.29s/it]Training Progress:  75%|█████████████████████████████████           | 45/60 [52:00<17:19, 69.27s/it]Training Progress:  77%|█████████████████████████████████▋          | 46/60 [53:09<16:09, 69.28s/it]Training Progress:  78%|██████████████████████████████████▍         | 47/60 [54:18<15:00, 69.29s/it]Training Progress:  80%|███████████████████████████████████▏        | 48/60 [55:28<13:52, 69.34s/it]Training Progress:  82%|███████████████████████████████████▉        | 49/60 [56:37<12:42, 69.32s/it]Training Progress:  83%|████████████████████████████████████▋       | 50/60 [57:46<11:33, 69.31s/it]Training Progress:  85%|█████████████████████████████████████▍      | 51/60 [58:55<10:23, 69.32s/it]Training Progress:  87%|████████████████████████████████████▍     | 52/60 [1:00:05<09:14, 69.33s/it]Training Progress:  88%|█████████████████████████████████████     | 53/60 [1:01:14<08:05, 69.35s/it]Training Progress:  90%|█████████████████████████████████████▊    | 54/60 [1:02:24<06:56, 69.40s/it]Training Progress:  92%|██████████████████████████████████████▌   | 55/60 [1:03:33<05:47, 69.41s/it]Training Progress:  93%|███████████████████████████████████████▏  | 56/60 [1:04:43<04:37, 69.43s/it]Training Progress:  95%|███████████████████████████████████████▉  | 57/60 [1:05:52<03:28, 69.44s/it]Training Progress:  97%|████████████████████████████████████████▌ | 58/60 [1:07:02<02:18, 69.44s/it]Training Progress:  98%|█████████████████████████████████████████▎| 59/60 [1:08:11<01:09, 69.44s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:20<00:00, 69.44s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:20<00:00, 69.35s/it]
+Finished Training.
+Training process took 4160.93 seconds.
+Done training.
+Updating dictionary for logging ...
+Evaluating model on test set ...
+Preparing data...
+selected device:  cuda
+Evaluating model...
+[█████████████████████████████████] Loss: 0.4938 | Accuracy: 0.8414
+Done.
+Done with this fold of the K-fold study.
+
+#################################################################
+Using trial 6 for testing ...
+#################################################################
+
+Preparing the datacell ...
+# subjects:    18
+# conditions:  8
+# trials:      10
+
+
+subjects used for testing:    []
+conditions used for testing:  []
+trials used for testing:      [6]
+
+
+Iterating through all trials ...
+
+Concatenating arrays and generating outputs ...
+Validation data source:   testset
+Validation data portion:  0.05
+x_train:  (259200, 1, 64, 8, 16)
+y_train:  (259200,)
+x_val:  (1440, 1, 64, 8, 16)
+y_val:  (1440,)
+x_test:  (27360, 1, 64, 8, 16)
+y_test:  (27360,)
+Constructing output dictionary ...
+Size of output dictionary in bytes:  9438404482
+Done.
+
+Generating downsampled input and output from datacell ...
+x_train shape:  (25920, 1, 64, 8, 16)
+x_val shape:  (144, 1, 64, 8, 16)
+x_test shape:  (2736, 1, 64, 8, 16)
+y_train shape:  (25920,)
+y_val shape:  (144,)
+y_test shape:  (2736,)
+Generating TensorDatsets form the data ...
+Constructing model ...
+Model input shape:  (1, 64, 8, 16)
+Model output shape:  [8]
+Training model ...
+Total number of data points:      26064
+Number of training data points:   25920
+Number of validation data points: 144
+Number of training batches:    51
+Number of validation batches:  1
+Batch size:                    512
+Shape of training input from the dataloader:   torch.Size([512, 1, 64, 8, 16])
+Shape of training output from the dataloader:  torch.Size([512])
+Shape of validation input from the dataloader:   torch.Size([144, 1, 64, 8, 16])
+Shape of validation output from the dataloader:  torch.Size([144])
+Selected device:  cuda:0
+The learning rate has an exponential decay rate of 0.90000.
+Classification problem detected. We will look at accuracies.
+Training Progress:   0%|                                                     | 0/60 [00:00<?, ?it/s]Training Progress:   2%|▋                                          | 1/60 [01:08<1:06:56, 68.08s/it]Training Progress:   3%|█▍                                         | 2/60 [02:17<1:06:18, 68.60s/it]Training Progress:   5%|██▏                                        | 3/60 [03:26<1:05:29, 68.93s/it]Training Progress:   7%|██▊                                        | 4/60 [04:35<1:04:31, 69.14s/it]Training Progress:   8%|███▌                                       | 5/60 [05:45<1:03:30, 69.28s/it]Training Progress:  10%|████▎                                      | 6/60 [06:54<1:02:26, 69.39s/it]Training Progress:  12%|█████                                      | 7/60 [08:04<1:01:23, 69.50s/it]Training Progress:  13%|█████▋                                     | 8/60 [09:14<1:00:16, 69.54s/it]Training Progress:  15%|██████▊                                      | 9/60 [10:23<59:07, 69.55s/it]Training Progress:  17%|███████▎                                    | 10/60 [11:33<57:58, 69.57s/it]Training Progress:  18%|████████                                    | 11/60 [12:43<56:49, 69.58s/it]Training Progress:  20%|████████▊                                   | 12/60 [13:52<55:40, 69.59s/it]Training Progress:  22%|█████████▌                                  | 13/60 [15:02<54:30, 69.59s/it]Training Progress:  23%|██████████▎                                 | 14/60 [16:12<53:22, 69.62s/it]Training Progress:  25%|███████████                                 | 15/60 [17:21<52:12, 69.61s/it]Training Progress:  27%|███████████▋                                | 16/60 [18:31<51:02, 69.60s/it]Training Progress:  28%|████████████▍                               | 17/60 [19:40<49:52, 69.60s/it]Training Progress:  30%|█████████████▏                              | 18/60 [20:50<48:43, 69.60s/it]Training Progress:  32%|█████████████▉                              | 19/60 [21:59<47:33, 69.59s/it]Training Progress:  33%|██████████████▋                             | 20/60 [23:09<46:24, 69.62s/it]Training Progress:  35%|███████████████▍                            | 21/60 [24:19<45:14, 69.61s/it]Training Progress:  37%|████████████████▏                           | 22/60 [25:28<44:05, 69.61s/it]Training Progress:  38%|████████████████▊                           | 23/60 [26:38<42:55, 69.61s/it]Training Progress:  40%|█████████████████▌                          | 24/60 [27:48<41:46, 69.61s/it]Training Progress:  42%|██████████████████▎                         | 25/60 [28:57<40:36, 69.62s/it]Training Progress:  43%|███████████████████                         | 26/60 [30:07<39:27, 69.64s/it]Training Progress:  45%|███████████████████▊                        | 27/60 [31:17<38:19, 69.67s/it]Training Progress:  47%|████████████████████▌                       | 28/60 [32:26<37:09, 69.67s/it]Training Progress:  48%|█████████████████████▎                      | 29/60 [33:36<35:59, 69.67s/it]Training Progress:  50%|██████████████████████                      | 30/60 [34:46<34:50, 69.68s/it]Training Progress:  52%|██████████████████████▋                     | 31/60 [35:55<33:40, 69.68s/it]Training Progress:  53%|███████████████████████▍                    | 32/60 [37:05<32:31, 69.68s/it]Training Progress:  55%|████████████████████████▏                   | 33/60 [38:15<31:21, 69.68s/it]Training Progress:  57%|████████████████████████▉                   | 34/60 [39:24<30:12, 69.71s/it]Training Progress:  58%|█████████████████████████▋                  | 35/60 [40:34<29:02, 69.70s/it]Training Progress:  60%|██████████████████████████▍                 | 36/60 [41:44<27:52, 69.70s/it]Training Progress:  62%|███████████████████████████▏                | 37/60 [42:54<26:42, 69.69s/it]Training Progress:  63%|███████████████████████████▊                | 38/60 [44:03<25:33, 69.69s/it]Training Progress:  65%|████████████████████████████▌               | 39/60 [45:13<24:23, 69.67s/it]Training Progress:  67%|█████████████████████████████▎              | 40/60 [46:23<23:13, 69.69s/it]Training Progress:  68%|██████████████████████████████              | 41/60 [47:32<22:03, 69.68s/it]Training Progress:  70%|██████████████████████████████▊             | 42/60 [48:42<20:53, 69.66s/it]Training Progress:  72%|███████████████████████████████▌            | 43/60 [49:51<19:43, 69.64s/it]Training Progress:  73%|████████████████████████████████▎           | 44/60 [51:01<18:34, 69.64s/it]Training Progress:  75%|█████████████████████████████████           | 45/60 [52:11<17:24, 69.63s/it]Training Progress:  77%|█████████████████████████████████▋          | 46/60 [53:20<16:14, 69.62s/it]Training Progress:  78%|██████████████████████████████████▍         | 47/60 [54:30<15:05, 69.64s/it]Training Progress:  80%|███████████████████████████████████▏        | 48/60 [55:40<13:55, 69.63s/it]Training Progress:  82%|███████████████████████████████████▉        | 49/60 [56:49<12:45, 69.61s/it]Training Progress:  83%|████████████████████████████████████▋       | 50/60 [57:59<11:36, 69.61s/it]Training Progress:  85%|█████████████████████████████████████▍      | 51/60 [59:08<10:26, 69.62s/it]Training Progress:  87%|████████████████████████████████████▍     | 52/60 [1:00:18<09:16, 69.61s/it]Training Progress:  88%|█████████████████████████████████████     | 53/60 [1:01:28<08:07, 69.65s/it]Training Progress:  90%|█████████████████████████████████████▊    | 54/60 [1:02:37<06:57, 69.65s/it]Training Progress:  92%|██████████████████████████████████████▌   | 55/60 [1:03:47<05:48, 69.65s/it]Training Progress:  93%|███████████████████████████████████████▏  | 56/60 [1:04:57<04:38, 69.65s/it]Training Progress:  95%|███████████████████████████████████████▉  | 57/60 [1:06:06<03:28, 69.65s/it]Training Progress:  97%|████████████████████████████████████████▌ | 58/60 [1:07:16<02:19, 69.65s/it]Training Progress:  98%|█████████████████████████████████████████▎| 59/60 [1:08:26<01:09, 69.65s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:35<00:00, 69.67s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:35<00:00, 69.60s/it]
+Finished Training.
+Training process took 4175.82 seconds.
+Done training.
+Updating dictionary for logging ...
+Evaluating model on test set ...
+Preparing data...
+selected device:  cuda
+Evaluating model...
+[█████████████████████████████████] Loss: 0.6011 | Accuracy: 0.8110
+Done.
+Done with this fold of the K-fold study.
+
+#################################################################
+Using trial 7 for testing ...
+#################################################################
+
+Preparing the datacell ...
+# subjects:    18
+# conditions:  8
+# trials:      10
+
+
+subjects used for testing:    []
+conditions used for testing:  []
+trials used for testing:      [7]
+
+
+Iterating through all trials ...
+
+Concatenating arrays and generating outputs ...
+Validation data source:   testset
+Validation data portion:  0.05
+x_train:  (259200, 1, 64, 8, 16)
+y_train:  (259200,)
+x_val:  (1440, 1, 64, 8, 16)
+y_val:  (1440,)
+x_test:  (27360, 1, 64, 8, 16)
+y_test:  (27360,)
+Constructing output dictionary ...
+Size of output dictionary in bytes:  9438404482
+Done.
+
+Generating downsampled input and output from datacell ...
+x_train shape:  (25920, 1, 64, 8, 16)
+x_val shape:  (144, 1, 64, 8, 16)
+x_test shape:  (2736, 1, 64, 8, 16)
+y_train shape:  (25920,)
+y_val shape:  (144,)
+y_test shape:  (2736,)
+Generating TensorDatsets form the data ...
+Constructing model ...
+Model input shape:  (1, 64, 8, 16)
+Model output shape:  [8]
+Training model ...
+Total number of data points:      26064
+Number of training data points:   25920
+Number of validation data points: 144
+Number of training batches:    51
+Number of validation batches:  1
+Batch size:                    512
+Shape of training input from the dataloader:   torch.Size([512, 1, 64, 8, 16])
+Shape of training output from the dataloader:  torch.Size([512])
+Shape of validation input from the dataloader:   torch.Size([144, 1, 64, 8, 16])
+Shape of validation output from the dataloader:  torch.Size([144])
+Selected device:  cuda:0
+The learning rate has an exponential decay rate of 0.90000.
+Classification problem detected. We will look at accuracies.
+Training Progress:   0%|                                                     | 0/60 [00:00<?, ?it/s]Training Progress:   2%|▋                                          | 1/60 [01:08<1:07:00, 68.14s/it]Training Progress:   3%|█▍                                         | 2/60 [02:17<1:06:23, 68.67s/it]Training Progress:   5%|██▏                                        | 3/60 [03:26<1:05:34, 69.03s/it]Training Progress:   7%|██▊                                        | 4/60 [04:36<1:04:38, 69.26s/it]Training Progress:   8%|███▌                                       | 5/60 [05:45<1:03:36, 69.40s/it]Training Progress:  10%|████▎                                      | 6/60 [06:55<1:02:33, 69.50s/it]Training Progress:  12%|█████                                      | 7/60 [08:05<1:01:25, 69.54s/it]Training Progress:  13%|█████▋                                     | 8/60 [09:14<1:00:16, 69.55s/it]Training Progress:  15%|██████▊                                      | 9/60 [10:24<59:07, 69.55s/it]Training Progress:  17%|███████▎                                    | 10/60 [11:33<57:57, 69.55s/it]Training Progress:  18%|████████                                    | 11/60 [12:43<56:47, 69.53s/it]Training Progress:  20%|████████▊                                   | 12/60 [13:52<55:38, 69.56s/it]Training Progress:  22%|█████████▌                                  | 13/60 [15:02<54:28, 69.54s/it]Training Progress:  23%|██████████▎                                 | 14/60 [16:12<53:18, 69.53s/it]Training Progress:  25%|███████████                                 | 15/60 [17:21<52:08, 69.53s/it]Training Progress:  27%|███████████▋                                | 16/60 [18:31<50:59, 69.53s/it]Training Progress:  28%|████████████▍                               | 17/60 [19:40<49:49, 69.53s/it]Training Progress:  30%|█████████████▏                              | 18/60 [20:50<48:40, 69.53s/it]Training Progress:  32%|█████████████▉                              | 19/60 [21:59<47:31, 69.55s/it]Training Progress:  33%|██████████████▋                             | 20/60 [23:09<46:21, 69.54s/it]Training Progress:  35%|███████████████▍                            | 21/60 [24:18<45:11, 69.53s/it]Training Progress:  37%|████████████████▏                           | 22/60 [25:28<44:02, 69.53s/it]Training Progress:  38%|████████████████▊                           | 23/60 [26:37<42:51, 69.51s/it]Training Progress:  40%|█████████████████▌                          | 24/60 [27:47<41:42, 69.51s/it]Training Progress:  42%|██████████████████▎                         | 25/60 [28:56<40:33, 69.52s/it]Training Progress:  43%|███████████████████                         | 26/60 [30:06<39:22, 69.50s/it]Training Progress:  45%|███████████████████▊                        | 27/60 [31:15<38:13, 69.49s/it]Training Progress:  47%|████████████████████▌                       | 28/60 [32:25<37:02, 69.47s/it]Training Progress:  48%|█████████████████████▎                      | 29/60 [33:34<35:52, 69.43s/it]Training Progress:  50%|██████████████████████                      | 30/60 [34:43<34:42, 69.41s/it]Training Progress:  52%|██████████████████████▋                     | 31/60 [35:53<33:32, 69.41s/it]Training Progress:  53%|███████████████████████▍                    | 32/60 [37:02<32:24, 69.45s/it]Training Progress:  55%|████████████████████████▏                   | 33/60 [38:12<31:15, 69.47s/it]Training Progress:  57%|████████████████████████▉                   | 34/60 [39:21<30:06, 69.49s/it]Training Progress:  58%|█████████████████████████▋                  | 35/60 [40:31<28:57, 69.51s/it]Training Progress:  60%|██████████████████████████▍                 | 36/60 [41:40<27:48, 69.52s/it]Training Progress:  62%|███████████████████████████▏                | 37/60 [42:50<26:39, 69.53s/it]Training Progress:  63%|███████████████████████████▊                | 38/60 [44:00<25:30, 69.56s/it]Training Progress:  65%|████████████████████████████▌               | 39/60 [45:09<24:20, 69.55s/it]Training Progress:  67%|█████████████████████████████▎              | 40/60 [46:19<23:10, 69.54s/it]Training Progress:  68%|██████████████████████████████              | 41/60 [47:28<22:01, 69.53s/it]Training Progress:  70%|██████████████████████████████▊             | 42/60 [48:38<20:51, 69.52s/it]Training Progress:  72%|███████████████████████████████▌            | 43/60 [49:47<19:41, 69.52s/it]Training Progress:  73%|████████████████████████████████▎           | 44/60 [50:57<18:32, 69.52s/it]Training Progress:  75%|█████████████████████████████████           | 45/60 [52:06<17:23, 69.54s/it]Training Progress:  77%|█████████████████████████████████▋          | 46/60 [53:16<16:13, 69.53s/it]Training Progress:  78%|██████████████████████████████████▍         | 47/60 [54:25<15:03, 69.52s/it]Training Progress:  80%|███████████████████████████████████▏        | 48/60 [55:35<13:54, 69.50s/it]Training Progress:  82%|███████████████████████████████████▉        | 49/60 [56:44<12:44, 69.50s/it]Training Progress:  83%|████████████████████████████████████▋       | 50/60 [57:54<11:34, 69.49s/it]Training Progress:  85%|█████████████████████████████████████▍      | 51/60 [59:03<10:25, 69.49s/it]Training Progress:  87%|████████████████████████████████████▍     | 52/60 [1:00:13<09:16, 69.51s/it]Training Progress:  88%|█████████████████████████████████████     | 53/60 [1:01:22<08:06, 69.50s/it]Training Progress:  90%|█████████████████████████████████████▊    | 54/60 [1:02:32<06:56, 69.49s/it]Training Progress:  92%|██████████████████████████████████████▌   | 55/60 [1:03:41<05:47, 69.49s/it]Training Progress:  93%|███████████████████████████████████████▏  | 56/60 [1:04:51<04:37, 69.50s/it]Training Progress:  95%|███████████████████████████████████████▉  | 57/60 [1:06:00<03:28, 69.50s/it]Training Progress:  97%|████████████████████████████████████████▌ | 58/60 [1:07:10<02:19, 69.52s/it]Training Progress:  98%|█████████████████████████████████████████▎| 59/60 [1:08:19<01:09, 69.52s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:29<00:00, 69.51s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:29<00:00, 69.49s/it]
+Finished Training.
+Training process took 4169.23 seconds.
+Done training.
+Updating dictionary for logging ...
+Evaluating model on test set ...
+Preparing data...
+selected device:  cuda
+Evaluating model...
+[█████████████████████████████████] Loss: 0.4697 | Accuracy: 0.8366
+Done.
+Done with this fold of the K-fold study.
+
+#################################################################
+Using trial 8 for testing ...
+#################################################################
+
+Preparing the datacell ...
+# subjects:    18
+# conditions:  8
+# trials:      10
+
+
+subjects used for testing:    []
+conditions used for testing:  []
+trials used for testing:      [8]
+
+
+Iterating through all trials ...
+
+Concatenating arrays and generating outputs ...
+Validation data source:   testset
+Validation data portion:  0.05
+x_train:  (259200, 1, 64, 8, 16)
+y_train:  (259200,)
+x_val:  (1440, 1, 64, 8, 16)
+y_val:  (1440,)
+x_test:  (27360, 1, 64, 8, 16)
+y_test:  (27360,)
+Constructing output dictionary ...
+Size of output dictionary in bytes:  9438404454
+Done.
+
+Generating downsampled input and output from datacell ...
+x_train shape:  (25920, 1, 64, 8, 16)
+x_val shape:  (144, 1, 64, 8, 16)
+x_test shape:  (2736, 1, 64, 8, 16)
+y_train shape:  (25920,)
+y_val shape:  (144,)
+y_test shape:  (2736,)
+Generating TensorDatsets form the data ...
+Constructing model ...
+Model input shape:  (1, 64, 8, 16)
+Model output shape:  [8]
+Training model ...
+Total number of data points:      26064
+Number of training data points:   25920
+Number of validation data points: 144
+Number of training batches:    51
+Number of validation batches:  1
+Batch size:                    512
+Shape of training input from the dataloader:   torch.Size([512, 1, 64, 8, 16])
+Shape of training output from the dataloader:  torch.Size([512])
+Shape of validation input from the dataloader:   torch.Size([144, 1, 64, 8, 16])
+Shape of validation output from the dataloader:  torch.Size([144])
+Selected device:  cuda:0
+The learning rate has an exponential decay rate of 0.90000.
+Classification problem detected. We will look at accuracies.
+Training Progress:   0%|                                                     | 0/60 [00:00<?, ?it/s]Training Progress:   2%|▋                                          | 1/60 [01:08<1:06:53, 68.02s/it]Training Progress:   3%|█▍                                         | 2/60 [02:17<1:06:18, 68.59s/it]Training Progress:   5%|██▏                                        | 3/60 [03:26<1:05:31, 68.97s/it]Training Progress:   7%|██▊                                        | 4/60 [04:36<1:04:36, 69.23s/it]Training Progress:   8%|███▌                                       | 5/60 [05:45<1:03:33, 69.34s/it]Training Progress:  10%|████▎                                      | 6/60 [06:55<1:02:28, 69.42s/it]Training Progress:  12%|█████                                      | 7/60 [08:04<1:01:21, 69.47s/it]Training Progress:  13%|█████▋                                     | 8/60 [09:14<1:00:14, 69.51s/it]Training Progress:  15%|██████▊                                      | 9/60 [10:23<59:06, 69.54s/it]Training Progress:  17%|███████▎                                    | 10/60 [11:33<57:58, 69.56s/it]Training Progress:  18%|████████                                    | 11/60 [12:43<56:50, 69.60s/it]Training Progress:  20%|████████▊                                   | 12/60 [13:52<55:40, 69.60s/it]Training Progress:  22%|█████████▌                                  | 13/60 [15:02<54:31, 69.60s/it]Training Progress:  23%|██████████▎                                 | 14/60 [16:12<53:21, 69.60s/it]Training Progress:  25%|███████████                                 | 15/60 [17:21<52:11, 69.60s/it]Training Progress:  27%|███████████▋                                | 16/60 [18:31<51:02, 69.60s/it]Training Progress:  28%|████████████▍                               | 17/60 [19:40<49:53, 69.61s/it]Training Progress:  30%|█████████████▏                              | 18/60 [20:50<48:43, 69.60s/it]Training Progress:  32%|█████████████▉                              | 19/60 [21:59<47:32, 69.58s/it]Training Progress:  33%|██████████████▋                             | 20/60 [23:09<46:22, 69.57s/it]Training Progress:  35%|███████████████▍                            | 21/60 [24:19<45:12, 69.56s/it]Training Progress:  37%|████████████████▏                           | 22/60 [25:28<44:02, 69.55s/it]Training Progress:  38%|████████████████▊                           | 23/60 [26:38<42:52, 69.54s/it]Training Progress:  40%|█████████████████▌                          | 24/60 [27:47<41:43, 69.55s/it]Training Progress:  42%|██████████████████▎                         | 25/60 [28:57<40:33, 69.53s/it]Training Progress:  43%|███████████████████                         | 26/60 [30:06<39:23, 69.51s/it]Training Progress:  45%|███████████████████▊                        | 27/60 [31:16<38:13, 69.50s/it]Training Progress:  47%|████████████████████▌                       | 28/60 [32:25<37:03, 69.50s/it]Training Progress:  48%|█████████████████████▎                      | 29/60 [33:35<35:54, 69.49s/it]Training Progress:  50%|██████████████████████                      | 30/60 [34:44<34:44, 69.49s/it]Training Progress:  52%|██████████████████████▋                     | 31/60 [35:54<33:35, 69.51s/it]Training Progress:  53%|███████████████████████▍                    | 32/60 [37:03<32:26, 69.50s/it]Training Progress:  55%|████████████████████████▏                   | 33/60 [38:13<31:16, 69.51s/it]Training Progress:  57%|████████████████████████▉                   | 34/60 [39:22<30:07, 69.50s/it]Training Progress:  58%|█████████████████████████▋                  | 35/60 [40:32<28:57, 69.50s/it]Training Progress:  60%|██████████████████████████▍                 | 36/60 [41:41<27:47, 69.49s/it]Training Progress:  62%|███████████████████████████▏                | 37/60 [42:51<26:38, 69.52s/it]Training Progress:  63%|███████████████████████████▊                | 38/60 [44:00<25:29, 69.51s/it]Training Progress:  65%|████████████████████████████▌               | 39/60 [45:10<24:19, 69.48s/it]Training Progress:  67%|█████████████████████████████▎              | 40/60 [46:19<23:08, 69.44s/it]Training Progress:  68%|██████████████████████████████              | 41/60 [47:28<21:59, 69.43s/it]Training Progress:  70%|██████████████████████████████▊             | 42/60 [48:38<20:49, 69.43s/it]Training Progress:  72%|███████████████████████████████▌            | 43/60 [49:47<19:40, 69.46s/it]Training Progress:  73%|████████████████████████████████▎           | 44/60 [50:57<18:32, 69.50s/it]Training Progress:  75%|█████████████████████████████████           | 45/60 [52:06<17:22, 69.50s/it]Training Progress:  77%|█████████████████████████████████▋          | 46/60 [53:16<16:13, 69.50s/it]Training Progress:  78%|██████████████████████████████████▍         | 47/60 [54:25<15:03, 69.50s/it]Training Progress:  80%|███████████████████████████████████▏        | 48/60 [55:35<13:53, 69.50s/it]Training Progress:  82%|███████████████████████████████████▉        | 49/60 [56:44<12:44, 69.49s/it]Training Progress:  83%|████████████████████████████████████▋       | 50/60 [57:54<11:35, 69.51s/it]Training Progress:  85%|█████████████████████████████████████▍      | 51/60 [59:03<10:25, 69.51s/it]Training Progress:  87%|████████████████████████████████████▍     | 52/60 [1:00:13<09:16, 69.51s/it]Training Progress:  88%|█████████████████████████████████████     | 53/60 [1:01:22<08:06, 69.51s/it]Training Progress:  90%|█████████████████████████████████████▊    | 54/60 [1:02:32<06:57, 69.51s/it]Training Progress:  92%|██████████████████████████████████████▌   | 55/60 [1:03:41<05:47, 69.51s/it]Training Progress:  93%|███████████████████████████████████████▏  | 56/60 [1:04:51<04:37, 69.49s/it]Training Progress:  95%|███████████████████████████████████████▉  | 57/60 [1:06:00<03:28, 69.51s/it]Training Progress:  97%|████████████████████████████████████████▌ | 58/60 [1:07:10<02:19, 69.50s/it]Training Progress:  98%|█████████████████████████████████████████▎| 59/60 [1:08:19<01:09, 69.50s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:29<00:00, 69.50s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:29<00:00, 69.49s/it]
+Finished Training.
+Training process took 4169.41 seconds.
+Done training.
+Updating dictionary for logging ...
+Evaluating model on test set ...
+Preparing data...
+selected device:  cuda
+Evaluating model...
+[█████████████████████████████████] Loss: 0.4891 | Accuracy: 0.8352
+Done.
+Done with this fold of the K-fold study.
+
+#################################################################
+Using trial 9 for testing ...
+#################################################################
+
+Preparing the datacell ...
+# subjects:    18
+# conditions:  8
+# trials:      10
+
+
+subjects used for testing:    []
+conditions used for testing:  []
+trials used for testing:      [9]
+
+
+Iterating through all trials ...
+
+Concatenating arrays and generating outputs ...
+Validation data source:   testset
+Validation data portion:  0.05
+x_train:  (259200, 1, 64, 8, 16)
+y_train:  (259200,)
+x_val:  (1440, 1, 64, 8, 16)
+y_val:  (1440,)
+x_test:  (27360, 1, 64, 8, 16)
+y_test:  (27360,)
+Constructing output dictionary ...
+Size of output dictionary in bytes:  9438404482
+Done.
+
+Generating downsampled input and output from datacell ...
+x_train shape:  (25920, 1, 64, 8, 16)
+x_val shape:  (144, 1, 64, 8, 16)
+x_test shape:  (2736, 1, 64, 8, 16)
+y_train shape:  (25920,)
+y_val shape:  (144,)
+y_test shape:  (2736,)
+Generating TensorDatsets form the data ...
+Constructing model ...
+Model input shape:  (1, 64, 8, 16)
+Model output shape:  [8]
+Training model ...
+Total number of data points:      26064
+Number of training data points:   25920
+Number of validation data points: 144
+Number of training batches:    51
+Number of validation batches:  1
+Batch size:                    512
+Shape of training input from the dataloader:   torch.Size([512, 1, 64, 8, 16])
+Shape of training output from the dataloader:  torch.Size([512])
+Shape of validation input from the dataloader:   torch.Size([144, 1, 64, 8, 16])
+Shape of validation output from the dataloader:  torch.Size([144])
+Selected device:  cuda:0
+The learning rate has an exponential decay rate of 0.90000.
+Classification problem detected. We will look at accuracies.
+Training Progress:   0%|                                                     | 0/60 [00:00<?, ?it/s]Training Progress:   2%|▋                                          | 1/60 [01:08<1:06:52, 68.01s/it]Training Progress:   3%|█▍                                         | 2/60 [02:16<1:06:17, 68.57s/it]Training Progress:   5%|██▏                                        | 3/60 [03:26<1:05:33, 69.00s/it]Training Progress:   7%|██▊                                        | 4/60 [04:36<1:04:37, 69.25s/it]Training Progress:   8%|███▌                                       | 5/60 [05:45<1:03:36, 69.40s/it]Training Progress:  10%|████▎                                      | 6/60 [06:55<1:02:31, 69.48s/it]Training Progress:  12%|█████                                      | 7/60 [08:05<1:01:24, 69.52s/it]Training Progress:  13%|█████▋                                     | 8/60 [09:14<1:00:15, 69.54s/it]Training Progress:  15%|██████▊                                      | 9/60 [10:24<59:08, 69.57s/it]Training Progress:  17%|███████▎                                    | 10/60 [11:33<57:58, 69.56s/it]Training Progress:  18%|████████                                    | 11/60 [12:43<56:48, 69.56s/it]Training Progress:  20%|████████▊                                   | 12/60 [13:52<55:38, 69.55s/it]Training Progress:  22%|█████████▌                                  | 13/60 [15:02<54:28, 69.54s/it]Training Progress:  23%|██████████▎                                 | 14/60 [16:11<53:18, 69.52s/it]Training Progress:  25%|███████████                                 | 15/60 [17:21<52:08, 69.51s/it]Training Progress:  27%|███████████▋                                | 16/60 [18:30<50:59, 69.54s/it]Training Progress:  28%|████████████▍                               | 17/60 [19:40<49:49, 69.53s/it]Training Progress:  30%|█████████████▏                              | 18/60 [20:49<48:40, 69.53s/it]Training Progress:  32%|█████████████▉                              | 19/60 [21:59<47:30, 69.52s/it]Training Progress:  33%|██████████████▋                             | 20/60 [23:08<46:20, 69.51s/it]Training Progress:  35%|███████████████▍                            | 21/60 [24:18<45:10, 69.50s/it]Training Progress:  37%|████████████████▏                           | 22/60 [25:27<44:01, 69.51s/it]Training Progress:  38%|████████████████▊                           | 23/60 [26:37<42:50, 69.48s/it]Training Progress:  40%|█████████████████▌                          | 24/60 [27:46<41:40, 69.46s/it]Training Progress:  42%|██████████████████▎                         | 25/60 [28:56<40:30, 69.44s/it]Training Progress:  43%|███████████████████                         | 26/60 [30:05<39:20, 69.42s/it]Training Progress:  45%|███████████████████▊                        | 27/60 [31:15<38:10, 69.42s/it]Training Progress:  47%|████████████████████▌                       | 28/60 [32:24<37:01, 69.42s/it]Training Progress:  48%|█████████████████████▎                      | 29/60 [33:33<35:52, 69.44s/it]Training Progress:  50%|██████████████████████                      | 30/60 [34:43<34:43, 69.43s/it]Training Progress:  52%|██████████████████████▋                     | 31/60 [35:52<33:33, 69.44s/it]Training Progress:  53%|███████████████████████▍                    | 32/60 [37:02<32:24, 69.46s/it]Training Progress:  55%|████████████████████████▏                   | 33/60 [38:11<31:15, 69.47s/it]Training Progress:  57%|████████████████████████▉                   | 34/60 [39:21<30:06, 69.47s/it]Training Progress:  58%|█████████████████████████▋                  | 35/60 [40:30<28:57, 69.48s/it]Training Progress:  60%|██████████████████████████▍                 | 36/60 [41:40<27:48, 69.51s/it]Training Progress:  62%|███████████████████████████▏                | 37/60 [42:49<26:38, 69.51s/it]Training Progress:  63%|███████████████████████████▊                | 38/60 [43:59<25:29, 69.51s/it]Training Progress:  65%|████████████████████████████▌               | 39/60 [45:08<24:19, 69.50s/it]Training Progress:  67%|█████████████████████████████▎              | 40/60 [46:18<23:10, 69.51s/it]Training Progress:  68%|██████████████████████████████              | 41/60 [47:27<22:00, 69.52s/it]Training Progress:  70%|██████████████████████████████▊             | 42/60 [48:37<20:52, 69.56s/it]Training Progress:  72%|███████████████████████████████▌            | 43/60 [49:47<19:42, 69.56s/it]Training Progress:  73%|████████████████████████████████▎           | 44/60 [50:56<18:32, 69.56s/it]Training Progress:  75%|█████████████████████████████████           | 45/60 [52:06<17:23, 69.56s/it]Training Progress:  77%|█████████████████████████████████▋          | 46/60 [53:15<16:13, 69.56s/it]Training Progress:  78%|██████████████████████████████████▍         | 47/60 [54:25<15:04, 69.54s/it]Training Progress:  80%|███████████████████████████████████▏        | 48/60 [55:34<13:54, 69.53s/it]Training Progress:  82%|███████████████████████████████████▉        | 49/60 [56:44<12:45, 69.55s/it]Training Progress:  83%|████████████████████████████████████▋       | 50/60 [57:53<11:35, 69.53s/it]Training Progress:  85%|█████████████████████████████████████▍      | 51/60 [59:03<10:25, 69.51s/it]Training Progress:  87%|████████████████████████████████████▍     | 52/60 [1:00:12<09:15, 69.50s/it]Training Progress:  88%|█████████████████████████████████████     | 53/60 [1:01:22<08:06, 69.49s/it]Training Progress:  90%|█████████████████████████████████████▊    | 54/60 [1:02:31<06:56, 69.48s/it]Training Progress:  92%|██████████████████████████████████████▌   | 55/60 [1:03:41<05:47, 69.51s/it]Training Progress:  93%|███████████████████████████████████████▏  | 56/60 [1:04:50<04:37, 69.50s/it]Training Progress:  95%|███████████████████████████████████████▉  | 57/60 [1:06:00<03:28, 69.49s/it]Training Progress:  97%|████████████████████████████████████████▌ | 58/60 [1:07:09<02:18, 69.48s/it]Training Progress:  98%|█████████████████████████████████████████▎| 59/60 [1:08:19<01:09, 69.48s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:28<00:00, 69.50s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:28<00:00, 69.48s/it]
+Finished Training.
+Training process took 4168.73 seconds.
+Done training.
+Updating dictionary for logging ...
+Evaluating model on test set ...
+Preparing data...
+selected device:  cuda
+Evaluating model...
+[█████████████████████████████████] Loss: 0.5265 | Accuracy: 0.8231
+Done.
+Done with this fold of the K-fold study.
+
+#################################################################
+Using trial 10 for testing ...
+#################################################################
+
+Preparing the datacell ...
+# subjects:    18
+# conditions:  8
+# trials:      10
+
+
+subjects used for testing:    []
+conditions used for testing:  []
+trials used for testing:      [10]
+
+
+Iterating through all trials ...
+
+Concatenating arrays and generating outputs ...
+Validation data source:   testset
+Validation data portion:  0.05
+x_train:  (259200, 1, 64, 8, 16)
+y_train:  (259200,)
+x_val:  (1440, 1, 64, 8, 16)
+y_val:  (1440,)
+x_test:  (27360, 1, 64, 8, 16)
+y_test:  (27360,)
+Constructing output dictionary ...
+Size of output dictionary in bytes:  9438404454
+Done.
+
+Generating downsampled input and output from datacell ...
+x_train shape:  (25920, 1, 64, 8, 16)
+x_val shape:  (144, 1, 64, 8, 16)
+x_test shape:  (2736, 1, 64, 8, 16)
+y_train shape:  (25920,)
+y_val shape:  (144,)
+y_test shape:  (2736,)
+Generating TensorDatsets form the data ...
+Constructing model ...
+Model input shape:  (1, 64, 8, 16)
+Model output shape:  [8]
+Training model ...
+Total number of data points:      26064
+Number of training data points:   25920
+Number of validation data points: 144
+Number of training batches:    51
+Number of validation batches:  1
+Batch size:                    512
+Shape of training input from the dataloader:   torch.Size([512, 1, 64, 8, 16])
+Shape of training output from the dataloader:  torch.Size([512])
+Shape of validation input from the dataloader:   torch.Size([144, 1, 64, 8, 16])
+Shape of validation output from the dataloader:  torch.Size([144])
+Selected device:  cuda:0
+The learning rate has an exponential decay rate of 0.90000.
+Classification problem detected. We will look at accuracies.
+Training Progress:   0%|                                                     | 0/60 [00:00<?, ?it/s]Training Progress:   2%|▋                                          | 1/60 [01:08<1:07:05, 68.22s/it]Training Progress:   3%|█▍                                         | 2/60 [02:17<1:06:24, 68.71s/it]Training Progress:   5%|██▏                                        | 3/60 [03:26<1:05:36, 69.06s/it]Training Progress:   7%|██▊                                        | 4/60 [04:36<1:04:39, 69.28s/it]Training Progress:   8%|███▌                                       | 5/60 [05:46<1:03:38, 69.43s/it]Training Progress:  10%|████▎                                      | 6/60 [06:55<1:02:33, 69.52s/it]Training Progress:  12%|█████                                      | 7/60 [08:05<1:01:27, 69.57s/it]Training Progress:  13%|█████▋                                     | 8/60 [09:15<1:00:20, 69.62s/it]Training Progress:  15%|██████▊                                      | 9/60 [10:24<59:10, 69.62s/it]Training Progress:  17%|███████▎                                    | 10/60 [11:34<58:00, 69.62s/it]Training Progress:  18%|████████                                    | 11/60 [12:43<56:51, 69.61s/it]Training Progress:  20%|████████▊                                   | 12/60 [13:53<55:41, 69.61s/it]Training Progress:  22%|█████████▌                                  | 13/60 [15:03<54:31, 69.60s/it]Training Progress:  23%|██████████▎                                 | 14/60 [16:12<53:22, 69.61s/it]Training Progress:  25%|███████████                                 | 15/60 [17:22<52:12, 69.60s/it]Training Progress:  27%|███████████▋                                | 16/60 [18:31<51:02, 69.59s/it]Training Progress:  28%|████████████▍                               | 17/60 [19:41<49:52, 69.59s/it]Training Progress:  30%|█████████████▏                              | 18/60 [20:51<48:42, 69.58s/it]Training Progress:  32%|█████████████▉                              | 19/60 [22:00<47:32, 69.57s/it]Training Progress:  33%|██████████████▋                             | 20/60 [23:10<46:22, 69.56s/it]Training Progress:  35%|███████████████▍                            | 21/60 [24:19<45:13, 69.57s/it]Training Progress:  37%|████████████████▏                           | 22/60 [25:29<44:03, 69.56s/it]Training Progress:  38%|████████████████▊                           | 23/60 [26:38<42:53, 69.55s/it]Training Progress:  40%|█████████████████▌                          | 24/60 [27:48<41:43, 69.54s/it]Training Progress:  42%|██████████████████▎                         | 25/60 [28:57<40:33, 69.53s/it]Training Progress:  43%|███████████████████                         | 26/60 [30:07<39:23, 69.52s/it]Training Progress:  45%|███████████████████▊                        | 27/60 [31:16<38:15, 69.55s/it]Training Progress:  47%|████████████████████▌                       | 28/60 [32:26<37:05, 69.53s/it]Training Progress:  48%|█████████████████████▎                      | 29/60 [33:35<35:54, 69.51s/it]Training Progress:  50%|██████████████████████                      | 30/60 [34:45<34:44, 69.49s/it]Training Progress:  52%|██████████████████████▋                     | 31/60 [35:54<33:34, 69.47s/it]Training Progress:  53%|███████████████████████▍                    | 32/60 [37:04<32:24, 69.46s/it]Training Progress:  55%|████████████████████████▏                   | 33/60 [38:13<31:15, 69.46s/it]Training Progress:  57%|████████████████████████▉                   | 34/60 [39:23<30:06, 69.49s/it]Training Progress:  58%|█████████████████████████▋                  | 35/60 [40:32<28:57, 69.50s/it]Training Progress:  60%|██████████████████████████▍                 | 36/60 [41:42<27:47, 69.49s/it]Training Progress:  62%|███████████████████████████▏                | 37/60 [42:51<26:38, 69.50s/it]Training Progress:  63%|███████████████████████████▊                | 38/60 [44:01<25:29, 69.50s/it]Training Progress:  65%|████████████████████████████▌               | 39/60 [45:10<24:19, 69.51s/it]Training Progress:  67%|█████████████████████████████▎              | 40/60 [46:20<23:10, 69.55s/it]Training Progress:  68%|██████████████████████████████              | 41/60 [47:29<22:01, 69.55s/it]Training Progress:  70%|██████████████████████████████▊             | 42/60 [48:39<20:51, 69.54s/it]Training Progress:  72%|███████████████████████████████▌            | 43/60 [49:49<19:42, 69.54s/it]Training Progress:  73%|████████████████████████████████▎           | 44/60 [50:58<18:32, 69.53s/it]Training Progress:  75%|█████████████████████████████████           | 45/60 [52:08<17:22, 69.52s/it]Training Progress:  77%|█████████████████████████████████▋          | 46/60 [53:17<16:12, 69.47s/it]Training Progress:  78%|██████████████████████████████████▍         | 47/60 [54:26<15:03, 69.46s/it]Training Progress:  80%|███████████████████████████████████▏        | 48/60 [55:36<13:53, 69.45s/it]Training Progress:  82%|███████████████████████████████████▉        | 49/60 [56:45<12:43, 69.45s/it]Training Progress:  83%|████████████████████████████████████▋       | 50/60 [57:55<11:34, 69.46s/it]Training Progress:  85%|█████████████████████████████████████▍      | 51/60 [59:04<10:25, 69.48s/it]Training Progress:  87%|████████████████████████████████████▍     | 52/60 [1:00:14<09:15, 69.49s/it]Training Progress:  88%|█████████████████████████████████████     | 53/60 [1:01:23<08:06, 69.54s/it]Training Progress:  90%|█████████████████████████████████████▊    | 54/60 [1:02:33<06:57, 69.54s/it]Training Progress:  92%|██████████████████████████████████████▌   | 55/60 [1:03:42<05:47, 69.54s/it]Training Progress:  93%|███████████████████████████████████████▏  | 56/60 [1:04:52<04:38, 69.54s/it]Training Progress:  95%|███████████████████████████████████████▉  | 57/60 [1:06:02<03:28, 69.54s/it]Training Progress:  97%|████████████████████████████████████████▌ | 58/60 [1:07:11<02:19, 69.54s/it]Training Progress:  98%|█████████████████████████████████████████▎| 59/60 [1:08:21<01:09, 69.54s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:30<00:00, 69.58s/it]Training Progress: 100%|██████████████████████████████████████████| 60/60 [1:09:30<00:00, 69.51s/it]
+findfont: Font family ['serif'] not found. Falling back to DejaVu Sans.
+findfont: Generic family 'serif' not found because none of the following families were found: Times New Roman
+Finished Training.
+Training process took 4170.83 seconds.
+Done training.
+Updating dictionary for logging ...
+Evaluating model on test set ...
+Preparing data...
+selected device:  cuda
+Evaluating model...
+[█████████████████████████████████] Loss: 0.5857 | Accuracy: 0.8227
+Done.
+Done with this fold of the K-fold study.
+Done with the K-fold study.
+Dumping the JSON file ...
+Saved the JSON file.
+Saving the general statistics ...
+Description of general results:
+       training_accuracy  validation_accuracy  testset_accuracy
+count          10.000000            10.000000         10.000000
+mean            0.965247             0.812500          0.816667
+std             0.008223             0.043921          0.032528
+min             0.948302             0.736111          0.731725
+25%             0.961603             0.788194          0.811129
+50%             0.967863             0.812500          0.822917
+75%             0.970110             0.838542          0.836257
+max             0.976119             0.875000          0.844298
+Saved general statistics.
+Plotting training curve ...
+Shape of train_loss:  (10, 60)
+Shape of train_loss_mean:  (60,)
+Shape of train_loss_std:  (60,)
+Done plotting the training curve.
+ALL DONE. GOOD BYE!
+All done. The Python script has run to the end. Good bye!
